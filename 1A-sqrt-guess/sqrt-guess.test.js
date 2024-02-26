@@ -64,7 +64,7 @@ describe('guess', () => {
 		expect(sqrt(25)).toBe(5.000023178253949);
 	});
 	it('sqrt 16', () => {
-		expect(sqrt(15)).toBe(3.872983698008724);
+		expect(sqrt(16)).toBe(4.000000636692939);
 	});
 	it('sqrt 9', () => {
 		expect(sqrt(9)).toBe(3.00009155413138);
