@@ -23,8 +23,9 @@ const guessSqrt = x => {
 function guessSqrt_2(x) {
 	// 2: the fixed point is the (100th?) iteration of the improvement function over the initial guess
 	function iterateUntilDone(improvementFunction, startingValue) {
-		// 3: iterate until the improved value is close enough to the old value, so that they are almost indistinguishable
+		// ! iteration logic
 		function iterate(oldGuess, newGuess) {
+			// ! stopping condition
 			if (isCloseEnuf(oldGuess, newGuess)) {
 				return newGuess;
 			}
