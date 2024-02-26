@@ -1,5 +1,4 @@
 const fib_recursive = (n, treeNodes = 0) => {
-	console.log('\x1b[93m%s\x1b[0m', 'calling w/', n);
 	if (n < 2) {
 		return { res: n, treeNodes: treeNodes + 1 };
 	}
