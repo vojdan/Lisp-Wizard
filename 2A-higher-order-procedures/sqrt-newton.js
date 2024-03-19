@@ -18,10 +18,10 @@ const dx = 0.0000001;
 const deriv = f => x => (f(x + dx) - f(x)) / dx;
 
 const newton = (f, guess) => {
-	// the f is fanned out into the secondCloud
-	const secondCloud = u => u - f(u) / df(u);
 	// the f is fanned out into the deriv
 	const df = deriv(f);
+	// the f is fanned out into the secondCloud
+	const secondCloud = u => u - f(u) / df(u);
 
 	return fixedPoint(secondCloud, guess);
 };
